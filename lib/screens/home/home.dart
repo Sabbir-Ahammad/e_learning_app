@@ -1,6 +1,13 @@
 import 'package:e_learning_app/constraints/color.dart';
+import 'package:e_learning_app/screens/home/widget/active_course.dart';
+import 'package:e_learning_app/screens/home/widget/category_title.dart';
+import 'package:e_learning_app/screens/home/widget/course_item.dart';
 import 'package:e_learning_app/screens/home/widget/emoji_text.dart';
+import 'package:e_learning_app/screens/home/widget/feature_course.dart';
+import 'package:e_learning_app/screens/home/widget/searchinput.dart';
 import 'package:flutter/material.dart';
+
+import '../../models/course.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -11,7 +18,7 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
-        children: [EmojiText()],
+        children: [EmojiText(), SearchInput(),FeatureCourse(), ActiveCourse()],
       )),
     );
   }
